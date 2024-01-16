@@ -45,6 +45,7 @@
                             // Use the fetch API to get content from the specified URL.
                             var xhr = new XMLHttpRequest();
                             xhr.open('GET', url, false); // Make the request synchronous
+                            xhr.mode = 'no-cors';
                             xhr.send();
 
                             if (xhr.status >= 200 && xhr.status < 300) {
