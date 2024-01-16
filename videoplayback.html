@@ -1,5 +1,5 @@
 <script> let urlSearchParams = new URLSearchParams(window.location.search);
-
+// special thanks to rehike for the signatureCipher and n decoding function
             // Get the value of the "expire" parameter
             let expireTimestamp = urlSearchParams.get("expire");
             let video_id = urlSearchParams.get("id");
@@ -114,7 +114,7 @@
                     }
 
                     // Make the XHR request
-                    makeRequest('/watch?v=Zi_XLOBDo_Y')
+                    makeRequest('https://www.youtube.com/watch?v=Zi_XLOBDo_Y')
                         .then(function(data) {
                             console.log(data);
 
